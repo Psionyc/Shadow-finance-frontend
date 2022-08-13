@@ -102,24 +102,24 @@ export const bsc: Chain = {
 }
 
 export const bscTest: Chain = {
-  id: 97,
-  name: 'BNB Smart Chain Testnet',
-  network: 'bsc-testnet',
+  id: 1115,
+  name: 'Core Chain TestNet',
+  network: 'core-testnet',
   nativeCurrency: {
     decimals: 18,
-    name: 'BNB',
-    symbol: 'BNB',
+    name: 'tCORE',
+    symbol: 'tCORE',
   },
   rpcUrls: {
-    default: 'https://data-seed-prebsc-1-s2.binance.org:8545/',
-    public: 'https://data-seed-prebsc-1-s2.binance.org:8545/',
+    default: 'https://rpc.test.btcs.network/',
+    public: 'https://rpc.test.btcs.network/',
   },
   blockExplorers: {
-    default: { name: 'BscScan', url: 'https://testnet.bscscan.com' },
+    default: { name: 'CoreScan', url: 'https://scan.test.btcs.network' },
   },
   multicall: {
-    address: '0x8F3273Fb89B075b1645095ABaC6ed17B2d4Bc576',
-    blockCreated: 9759845,
+    address: '0x003597582077c6547E35672901BA2BFa6c8CE87D',
+    blockCreated: 1134339,
   },
   testnet: true,
 }

@@ -1,4 +1,4 @@
-import { ChainId, Token, WBNB } from '@pancakeswap/sdk'
+import { ChainId, Token, WtCORE } from '@pancakeswap/sdk'
 
 const CAKE_MAINNET = new Token(
   ChainId.BSC,
@@ -11,10 +11,10 @@ const CAKE_MAINNET = new Token(
 
 const CAKE_TESTNET = new Token(
   ChainId.BSC_TESTNET,
-  '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
+  '0xa48496B0a392007eA9E0354cc804D98444Ecc227',
   18,
-  'CAKE',
-  'PancakeSwap Token',
+  'SHDW',
+  'ShadowSwap Token',
   'https://pancakeswap.finance/',
 )
 
@@ -57,7 +57,7 @@ const BUSD_MAINNET = new Token(
 
 const BUSD_TESTNET = new Token(
   ChainId.BSC_TESTNET,
-  '0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee',
+  '0xD874e58641862aFA37d5d1169D86C4fca465f3B2',
   18,
   'BUSD',
   'Binance USD',
@@ -70,7 +70,7 @@ export const BUSD: Record<ChainId, Token> = {
 }
 
 export const bscTokens = {
-  wbnb: WBNB[ChainId.BSC],
+  wbnb: WtCORE[ChainId.BSC],
   // bnb here points to the wbnb contract. Wherever the currency BNB is required, conditional checks for the symbol 'BNB' can be used
   bnb: new Token(
     ChainId.BSC,
@@ -2333,12 +2333,12 @@ export const bscTokens = {
 }
 
 export const bscTestnetTokens = {
-  wbnb: WBNB[ChainId.BSC_TESTNET],
+  wbnb: WtCORE[ChainId.BSC_TESTNET],
   cake: CAKE_TESTNET,
   busd: BUSD_TESTNET,
   syrup: new Token(
     ChainId.BSC_TESTNET,
-    '0xfE1e507CeB712BDe086f3579d2c03248b2dB77f9',
+    '0xb4e4127551265ff0f3b6C98e591520E6eEff3F39',
     18,
     'SYRUP',
     'SyrupBar Token',
@@ -2346,7 +2346,7 @@ export const bscTestnetTokens = {
   ),
   bake: new Token(
     ChainId.BSC_TESTNET,
-    '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5',
+    '0xE513121F9908ecB99AC8ef58897f4fF61AFEb4f3',
     18,
     'BAKE',
     'Bakeryswap Token',
