@@ -43,7 +43,7 @@ const Stats = () => {
         {t('Trusted with billions.')}
       </Heading>
       <Text textAlign="center" color="textSubtle">
-        {t('PancakeSwap has the most users of any decentralized platform, ever.')}
+        {t('ShadowSwap has the most users of any decentralized platform, ever.')}
       </Text>
       <Flex flexWrap="wrap">
         <Text display="inline" textAlign="center" color="textSubtle" mb="20px">
@@ -54,7 +54,7 @@ const Stats = () => {
       </Flex>
 
       <Text textAlign="center" color="textSubtle" bold mb="32px">
-        {t('Will you join them?')}
+        {t('Will you join the Shadows?')}
       </Text>
 
       <Flex flexDirection={['column', null, null, 'row']}>
