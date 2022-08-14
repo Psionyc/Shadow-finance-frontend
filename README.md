@@ -1,6 +1,6 @@
-# 🥞 Pancake Frontend
+# Shadow Frontend
 
-This project contains the main features of the pancake application.
+This project contains the main features of the shadow application.
 
 If you want to contribute, please refer to the [contributing guidelines](./CONTRIBUTING.md) of this project.
 
@@ -15,7 +15,7 @@ If you want to contribute, please refer to the [contributing guidelines](./CONTR
 install dependencies using **yarn**
 
 ```sh
-yarn
+yarn --registry https://registry.npmjs.org/
 ```
 
 start the development server
@@ -30,3 +30,4 @@ yarn build
 # start the application after build
 yarn start
 ```
+May the Shadow Be with you
