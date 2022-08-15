@@ -2368,4 +2368,12 @@ export const bscTestnetTokens = {
     'sUSDT Token',
     'https://www.sUSDT.org/',
   ),
+  WtCORE: new Token(
+    ChainId.BSC_TESTNET,
+    '0xf6077b8DAcEc85be11d8D2dA04e1705668985Bcf',
+    18,
+    'WtCORE',
+    'WtCORE Token',
+    'https://www.coredao.org/',
+  ),
 }

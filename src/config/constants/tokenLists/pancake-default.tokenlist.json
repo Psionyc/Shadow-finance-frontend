@@ -128,15 +128,15 @@
       "address": "0xa48496B0a392007eA9E0354cc804D98444Ecc227",
       "chainId": 1115,
       "decimals": 18,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0xa48496B0a392007eA9E0354cc804D98444Ecc227.png"
+      "logoURI": "http://localhost:3000/images/tokens/0xa48496B0a392007eA9E0354cc804D98444Ecc227.png"
     },
     {
-      "name": "BUSD Token",
-      "symbol": "BUSD",
+      "name": "sUSDC Token",
+      "symbol": "sUSDC",
       "address": "0xD874e58641862aFA37d5d1169D86C4fca465f3B2",
       "chainId": 1115,
       "decimals": 18,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56.png"
+      "logoURI": "https://assets.coingecko.com/coins/images/6319/small/USD_Coin_icon.png?1547042389"
     },
     {
       "name": "sEthereum Token",
@@ -152,7 +152,7 @@
       "address": "0xD35899389E5B0ec6E9262E012aC64dD02d2203C2",
       "chainId": 1115,
       "decimals": 18,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0x2170Ed0880ac9A755fd29B2688956BD959F933F8.png"
+      "logoURI": "https://assets.coingecko.com/coins/images/9956/small/4943.png?1636636734"
     },
     {
       "name": "sUSDT Token",
@@ -160,7 +160,15 @@
       "address": "0x3786495F5d8a83B7bacD78E2A0c61ca20722Cce3",
       "chainId": 1115,
       "decimals": 6,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0x2170Ed0880ac9A755fd29B2688956BD959F933F8.png"
+      "logoURI": "https://assets.coingecko.com/coins/images/325/thumb/Tether-logo.png?1598003707"
+    },
+    {
+      "name": "WtCORE Token",
+      "symbol": "WtCORE",
+      "address": "0xf6077b8DAcEc85be11d8D2dA04e1705668985Bcf",
+      "chainId": 1115,
+      "decimals": 18,
+      "logoURI": "http://localhost:3000/images/tokens/0xf6077b8DAcEc85be11d8D2dA04e1705668985Bcf.png"
     }
   ]
 }
