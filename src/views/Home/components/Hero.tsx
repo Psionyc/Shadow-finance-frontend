@@ -6,8 +6,8 @@ import { useTranslation } from 'contexts/Localization'
 import useTheme from 'hooks/useTheme'
 import Image from 'next/image'
 import styled, { keyframes } from 'styled-components'
-import bunnyImage from '../../../../public/images/home/lunar-bunny/bunny@2x.png'
-import CompositeImage, { CompositeImageProps } from './CompositeImage'
+import bunnyImage from '../../../../public/images/home/lunar-bunny/shadow@2x.png'
+// import CompositeImage, { CompositeImageProps } from './CompositeImage'
 import { SlideSvgDark, SlideSvgLight } from './SlideSvg'
 
 const flyingAnim = () => keyframes`
@@ -80,14 +80,14 @@ const StarsWrapper = styled.div`
   }
 `
 
-const starsImage: CompositeImageProps = {
-  path: '/images/home/lunar-bunny/',
-  attributes: [
-    { src: 'star-l', alt: '3D Star' },
-    { src: 'star-r', alt: '3D Star' },
-    { src: 'star-top-r', alt: '3D Star' },
-  ],
-}
+// const starsImage: CompositeImageProps = {
+//   path: '/images/home/lunar-bunny/',
+//   attributes: [
+//     { src: 'star-l', alt: '3D Star' },
+//     { src: 'star-r', alt: '3D Star' },
+//     { src: 'star-top-r', alt: '3D Star' },
+//   ],
+// }
 
 const Hero = () => {
   const { t } = useTranslation()
@@ -113,7 +113,7 @@ const Hero = () => {
           </Heading>
           <Heading scale="md" mb="24px">
             {t(
-              'ShadowSwap is a one-stop decentralized trading protocol which utilizes the fast,secure and decentralised Network of the Core blockchain, creating an open and safe marketplace for traders, liquidity providers, and developers.',
+              'ShadowSwap is a one-stop decentralized trading protocol which utilizes the fast,secure and decentralised Consensus of the Core blockchain, creating an open and safe marketplace for traders, liquidity providers, and developers.',
             )}
           </Heading>
           <Flex>
@@ -133,9 +133,7 @@ const Hero = () => {
           <BunnyWrapper>
             <Image src={bunnyImage} priority placeholder="blur" alt={t('Lunar bunny')} />
           </BunnyWrapper>
-          <StarsWrapper>
-            <CompositeImage {...starsImage} />
-          </StarsWrapper>
+          <StarsWrapper>{/* <CompositeImage {...starsImage} /> */}</StarsWrapper>
         </Flex>
       </Flex>
     </>
