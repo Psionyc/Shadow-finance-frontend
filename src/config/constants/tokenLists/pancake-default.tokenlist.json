@@ -128,7 +128,7 @@
       "address": "0xa48496B0a392007eA9E0354cc804D98444Ecc227",
       "chainId": 1115,
       "decimals": 18,
-      "logoURI": "http://localhost:3000/images/tokens/0xa48496B0a392007eA9E0354cc804D98444Ecc227.png"
+      "logoURI": "https://raw.githubusercontent.com/SVerseLab/ShadowSwap-frontend/Main/public/favicon.ico"
     },
     {
       "name": "sUSDC Token",
