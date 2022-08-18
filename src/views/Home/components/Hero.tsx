@@ -113,7 +113,7 @@ const Hero = () => {
           </Heading>
           <Heading scale="md" mb="24px">
             {t(
-              'ShadowSwap is a one-stop decentralized trading protocol which utilizes the fast,secure and decentralised Consensus of the Core blockchain, creating an open and safe marketplace for traders, liquidity providers, and developers.',
+              'ShadowSwap is a one-stop decentralized trading protocol which utilizes the security, scalability, and decentralization of the Core blockchain, creating an open and safe marketplace for traders, liquidity providers, and developers.',
             )}
           </Heading>
           <Flex>

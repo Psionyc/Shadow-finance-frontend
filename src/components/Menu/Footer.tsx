@@ -60,7 +60,7 @@ const Footer: React.FC<{ variant?: FooterVariant; helpUrl?: string }> = ({
           mt={['20px', '20px', isSide ? '20px' : 0]}
           mb={['8px', '8px', 0]}
         >
-          {t('Convert ERC-20 to BEP-20')}
+          {t('Convert ERC-20 to Core chain')}
         </LinkExternal>
       </Flex>
       {isSide && <Flex flexGrow={1} />}
