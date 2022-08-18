@@ -17,7 +17,12 @@ export const NetworkSelect = () => {
       <UserMenuDivider />
       {chains.map((chain) => (
         <UserMenuItem key={chain.id} style={{ justifyContent: 'flex-start' }} onClick={() => setupNetwork(chain.id)}>
-          <Image width={24} height={24} src={`https://cdn.pancakeswap.com/chains/${chain.id}.png`} unoptimized />
+          <Image
+            width={24}
+            height={24}
+            src={`https://raw.githubusercontent.com/SVerseLab/ShadowSwap-frontend/Main/public/Chains/${chain.id}.png`}
+            unoptimized
+          />
           <Text pl="12px">{chain.name}</Text>
         </UserMenuItem>
       ))}
@@ -32,7 +37,7 @@ export const NetworkSwitcher = () => {
     return (
       <UserMenu
         mr="8px"
-        avatarSrc={`https://cdn.pancakeswap.com/chains/${chainId}.png`}
+        avatarSrc={`https://raw.githubusercontent.com/SVerseLab/ShadowSwap-frontend/Main/public/Chains/${chainId}.png`}
         account={bscTest.name}
         ellipsis={false}
       >
