@@ -55,7 +55,7 @@ const config: (
           href: '/liquidity',
         },
         {
-          label: t('Perpetual'),
+          label: t('Bridge'),
           href: `https://perp.pancakeswap.finance/${perpLangMap(languageCode)}/futures/BTCUSDT?theme=${perpTheme(
             isDark,
           )}`,
