@@ -46,12 +46,12 @@ const PerpetualBanner = () => {
     <S.Wrapper>
       <S.Inner>
         <S.LeftWrapper>
-          <S.StyledSubheading>{t('Perpetual Futures')}</S.StyledSubheading>
-          <Header width={['160px', '160px', 'auto']}>{t('Up to 100× Leverage')}</Header>
+          <S.StyledSubheading>{t('SVerse Lab')}</S.StyledSubheading>
+          <Header width={['160px', '160px', 'auto']}>{t('ShadowSwap Powered by SVerse Lab')}</Header>
           <Link href={perpetualUrl} external>
             <Button>
               <Text color="invertedContrast" bold fontSize="16px" mr="4px">
-                {t('Trade Now')}
+                {t('Learn More Now')}
               </Text>
               <ArrowForwardIcon color="invertedContrast" />
             </Button>
