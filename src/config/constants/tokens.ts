@@ -2352,6 +2352,14 @@ export const bscTestnetTokens = {
     'sEthereum Token',
     'https://www.bakeryswap.org/',
   ),
+  sBTC: new Token(
+    ChainId.BSC_TESTNET,
+    '0x7028CEF69C028122400D5D0240227DcEA1750848',
+    18,
+    'sBTC',
+    'Core BTC Token',
+    'https://www.BTC.org/',
+  ),
   sDai: new Token(
     ChainId.BSC_TESTNET,
     '0xD35899389E5B0ec6E9262E012aC64dD02d2203C2',

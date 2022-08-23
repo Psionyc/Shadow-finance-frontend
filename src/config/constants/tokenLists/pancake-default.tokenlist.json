@@ -147,6 +147,14 @@
       "logoURI": "https://pancakeswap.finance/images/tokens/0x2170Ed0880ac9A755fd29B2688956BD959F933F8.png"
     },
     {
+      "name": "Core BTC Token",
+      "symbol": "sBTC",
+      "address": "0x7028CEF69C028122400D5D0240227DcEA1750848",
+      "chainId": 1115,
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/14867/thumb/binance-btc_32.png?1618814666"
+    },
+    {
       "name": "sDai Token",
       "symbol": "sDai",
       "address": "0xD35899389E5B0ec6E9262E012aC64dD02d2203C2",
