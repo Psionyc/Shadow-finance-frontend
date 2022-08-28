@@ -19,16 +19,8 @@ export const footerLinks: FooterLinkType[] = [
         href: "https://docs.pancakeswap.finance/contact-us/telegram",
       },
       {
-        label: "CAKE",
+        label: "SHDW",
         href: "https://docs.pancakeswap.finance/tokenomics/cake",
-      },
-      {
-        label: "—",
-      },
-      {
-        label: "Online Store",
-        href: "https://pancakeswap.creator-spring.com/",
-        isHighlighted: true,
       },
     ],
   },
@@ -69,7 +61,7 @@ export const footerLinks: FooterLinkType[] = [
         href: "https://docs.pancakeswap.finance/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited",
       },
       {
-        label: "Careers",
+        label: "Sverse Lab",
         href: "https://docs.pancakeswap.finance/hiring/become-a-chef",
       },
     ],
