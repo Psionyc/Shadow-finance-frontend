@@ -1,13 +1,11 @@
 import { useState } from 'react'
 import styled from 'styled-components'
-import { Text, PancakeToggle, Toggle, Flex, Modal, InjectedModalProps, ThemeSwitcher, Box } from '@pancakeswap/uikit'
+import { Text, Toggle, Flex, Modal, InjectedModalProps, ThemeSwitcher } from '@pancakeswap/uikit'
 import {
-  useAudioModeManager,
   useExpertModeManager,
   useSubgraphHealthIndicatorManager,
   useUserExpertModeAcknowledgementShow,
   useUserSingleHopOnly,
-  useZapModeManager,
 } from 'state/user/hooks'
 import { useSwapActionHandlers } from 'state/swap/useSwapActionHandlers'
 import { useTranslation } from 'contexts/Localization'
@@ -15,7 +13,7 @@ import useTheme from 'hooks/useTheme'
 import QuestionHelper from '../../QuestionHelper'
 import TransactionSettings from './TransactionSettings'
 import ExpertModal from './ExpertModal'
-import GasSettings from './GasSettings'
+
 import { SettingsMode } from './types'
 
 const ScrollableContainer = styled(Flex)`
@@ -35,8 +33,6 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss, mode }) => {
   const [showExpertModeAcknowledgement, setShowExpertModeAcknowledgement] = useUserExpertModeAcknowledgementShow()
   const [expertMode, toggleExpertMode] = useExpertModeManager()
   const [singleHopOnly, setSingleHopOnly] = useUserSingleHopOnly()
-  const [audioPlay, toggleSetAudioMode] = useAudioModeManager()
-  const [zapMode, toggleZapMode] = useZapModeManager()
   const [subgraphHealth, setSubgraphHealth] = useSubgraphHealthIndicatorManager()
   const { onChangeRecipient } = useSwapActionHandlers()
 
@@ -103,7 +99,6 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss, mode }) => {
                   }}
                 />
               </Flex>
-              <GasSettings />
             </Flex>
           </>
         )}
@@ -113,40 +108,7 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss, mode }) => {
               <Text bold textTransform="uppercase" fontSize="18px" color="secondary" mb="24px">
                 {t('Swaps & Liquidity')}
               </Text>
-              <Flex justifyContent="space-between" alignItems="center" mb="24px">
-                <GasSettings />
-              </Flex>
               <TransactionSettings />
-            </Flex>
-            <Flex justifyContent="space-between" alignItems="center" mb="24px">
-              <Flex alignItems="center">
-                <Text>{t('Zap (Beta)')}</Text>
-                <QuestionHelper
-                  text={
-                    <Box>
-                      <Text>
-                        {t(
-                          'Zap enables simple liquidity provision. Add liquidity with one token and one click, without manual swapping or token balancing.',
-                        )}
-                      </Text>
-                      <Text>
-                        {t(
-                          'If you experience any issue when adding or removing liquidity, please disable Zap and retry.',
-                        )}
-                      </Text>
-                    </Box>
-                  }
-                  placement="top-start"
-                  ml="4px"
-                />
-              </Flex>
-              <Toggle
-                checked={zapMode}
-                scale="md"
-                onChange={() => {
-                  toggleZapMode(!zapMode)
-                }}
-              />
             </Flex>
             <Flex justifyContent="space-between" alignItems="center" mb="24px">
               <Flex alignItems="center">
@@ -177,17 +139,6 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss, mode }) => {
                   setSingleHopOnly(!singleHopOnly)
                 }}
               />
-            </Flex>
-            <Flex justifyContent="space-between" alignItems="center" mb="24px">
-              <Flex alignItems="center">
-                <Text>{t('Flippy sounds')}</Text>
-                <QuestionHelper
-                  text={t('Fun sounds to make a truly immersive pancake-flipping trading experience')}
-                  placement="top-start"
-                  ml="4px"
-                />
-              </Flex>
-              <PancakeToggle checked={audioPlay} onChange={toggleSetAudioMode} scale="md" />
             </Flex>
           </>
         )}
