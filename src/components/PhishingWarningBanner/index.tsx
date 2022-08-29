@@ -45,8 +45,8 @@ const PhishingWarningBanner: React.FC = () => {
   const [, hideBanner] = usePhishingBannerManager()
   const { isMobile, isMd } = useMatchBreakpointsContext()
   const warningTextAsParts = useMemo(() => {
-    const warningText = t("please make sure you're visiting https://pancakeswap.finance - check the URL carefully.")
-    return warningText.split(/(https:\/\/pancakeswap.finance)/g)
+    const warningText = t("please make sure you're visiting https://shadowswap.xyz - check the URL carefully.")
+    return warningText.split(/(https:\/\/shadowswap.xyz)/g)
   }, [t])
   const warningTextComponent = (
     <>
@@ -59,8 +59,8 @@ const PhishingWarningBanner: React.FC = () => {
           key={i}
           small
           as="span"
-          bold={text === 'https://pancakeswap.finance'}
-          color={text === 'https://pancakeswap.finance' ? '#FFFFFF' : '#BDC2C4'}
+          bold={text === 'https://shadowswap.xyz'}
+          color={text === 'https://shadowswap.xyz' ? '#FFFFFF' : '#BDC2C4'}
         >
           {text}
         </Text>
@@ -80,11 +80,11 @@ const PhishingWarningBanner: React.FC = () => {
         <>
           <InnerContainer>
             <img
-              src="/images/decorations/phishing-warning-bunny.webp"
+              src="/images/decorations/phishing-warning-shadow.webp"
               alt="phishing-warning"
-              width="92px"
+              width="80px"
               onError={(e) => {
-                const fallbackSrc = '/images/decorations/phishing-warning-bunny.png'
+                const fallbackSrc = '/images/decorations/phishing-warning-shadow.png'
                 if (!e.currentTarget.src.endsWith(fallbackSrc)) {
                   // eslint-disable-next-line no-param-reassign
                   e.currentTarget.src = fallbackSrc
