@@ -20,7 +20,7 @@ export const NetworkSelect = () => {
           <Image
             width={24}
             height={24}
-            src={`https://raw.githubusercontent.com/SVerseLab/ShadowSwap-frontend/Main/public/Chains/${chain.id}.png`}
+            src={`https://raw.githubusercontent.com/SVerseLab/Shadow-finance-frontend/Main/public/Chains/${chain.id}.png`}
             unoptimized
           />
           <Text pl="12px">{chain.name}</Text>
@@ -37,7 +37,7 @@ export const NetworkSwitcher = () => {
     return (
       <UserMenu
         mr="8px"
-        avatarSrc={`https://raw.githubusercontent.com/SVerseLab/ShadowSwap-frontend/Main/public/Chains/${chainId}.png`}
+        avatarSrc={`https://raw.githubusercontent.com/SVerseLab/Shadow-finance-frontend/Main/public/Chains/${chainId}.png`}
         account={bscTest.name}
         ellipsis={false}
       >

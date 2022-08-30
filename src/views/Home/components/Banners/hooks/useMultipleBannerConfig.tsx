@@ -2,7 +2,7 @@ import { ReactElement, useMemo } from 'react'
 import shuffle from 'lodash/shuffle'
 import CompetitionBanner from '../CompetitionBanner'
 import IFOBanner from '../IFOBanner'
-import LotteryBanner from '../LotteryBanner'
+import ListingBanner from '../ListingBanner'
 import PerpetualBanner from '../PerpetualBanner'
 import useIsRenderIfoBanner from './useIsRenderIFOBanner'
 import useIsRenderLotteryBanner from './useIsRenderLotteryBanner'
@@ -45,7 +45,7 @@ export const useMultipleBannerConfig = () => {
       },
       {
         shouldRender: isRenderLotteryBanner,
-        banner: <LotteryBanner />,
+        banner: <ListingBanner />,
       },
       {
         shouldRender: true,
